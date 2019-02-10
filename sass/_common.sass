@@ -1,0 +1,209 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book", Arial, sans-serif 
+// insert pics into css
+// div
+// 	+pic("blabla.png")
+// span
+// 	+png(blabla)
+// p
+// 	+jpg(bla)
+
+
+//body
+//  font-family: Arial, sans-serif
+//  font-size: 12px
+//  line-height: 1.4
+//=pfl
+  font-family: "Conv_PFDinTextCondPro-Light"
+  font-weight: normal
+  font-style: normal
+=rl
+  font-family: 'robotolight'
+  font-weight: normal
+  font-style: normal
+=rb
+  font-family: 'robotobold'
+  font-weight: normal
+  font-style: normal
+=rr
+  font-family: 'robotoregular'
+  font-weight: normal
+  font-style: normal
+=rm
+  font-family: 'robotomedium'
+  font-weight: normal
+  font-style: normal
+=rsb
+  font-family: 'roboto_slabbold'
+  font-weight: normal
+  font-style: normal
+
+
+.btn:focus, input:focus
+  outline: none !important
+.btn--review
+  height: 63px
+  width: 100%
+  margin-top: 0
+  text-transform: none !important
+  font-size: 19px !important
+  padding: 0 5px !important
+.container
+  max-width: 1000px
+  .button--intro
+    margin-top: 25px
+    padding: 10px
+input.error, textarea.error
+  box-shadow: inset 0 0 10px red !important
+label.error
+  display: none !important
+
+
+.icon
+  display: inline-block
+  position: relative
+section 
+
+body
+  font-size: 16px
+  line-height: 1.4
+  background: #fff
+  color: #444444
+  font-family: 'robotolight'
+  //+pfl
+.out
+  position: relative
+input, textarea
+  +placeholder
+    font-size: 13px
+    text-transform: none
+    color: #a6a6a6
+    +rl
+%in
+  max-width: 1200px
+  width: 1000px
+  margin-left: auto
+  margin-right: auto
+
+.fancybox-inner
+  +box-shadow(0 38px 40px -40px black)
+.myFancyClose
+  position: absolute
+  top: -8px
+  right: -9px
+  +s(close)
+
+.btn
+  display: inline-block
+  font-family: 'roboto_slabbold'
+  padding: 13px 54px
+  font-size: 24px
+  text-decoration: none
+  text-transform: uppercase
+  +transition(background, .5s)
+  +border-radius(6px)
+  +background-clip(padding-box)
+  background: #f1a8a1
+  color: #ffffff
+  +box-shadow(0 3px 0 #cb6f65, inset 0 -1px 0 rgba(255,255,255,.12))
+  +text-shadow(1px 2px 0 rgba(0,0,0,.15))
+  &:hover
+    background: lighten(#f1a8a1, 3%)
+    +box-shadow(0 0 0 0)
+    color: #fff
+.title
+  font-size: 34px
+  font-family: 'roboto_slabbold'
+  line-height: 1.2em
+  color: #444
+  text-transform: none
+  font-weight: normal
+  position: relative
+  text-align: center
+.vcenter
+  display: inline-block
+  vertical-align: middle
+  float: none
+
+.counter
+  display: inline-block
+  vertical-align: middle
+  margin-top: 30px
+  .bl
+    float: left
+    text-align: center
+    margin: 0 12px
+    &:last-of-type
+      margin-right: 0
+    span
+      width: 58px
+      height: 58px
+      display: inline-block
+      +rr
+      font-size: 42px
+      color: #424242
+      padding-top: 0
+      position: relative
+      +border-radius(2px)
+      +background-clip(padding-box)
+      background: #fff
+      +text-shadow(0 1px 0 #fff)
+      +box-shadow(0 1px 4px rgba(0,0,0,.26))
+      &:after
+        position: absolute
+        content: ":"
+        font-size: 32px
+        color: #ffffff
+        top: 5px
+        right: -16px
+      &.s
+        &:after
+          content: ""
+
+
+    p
+      font-family: Arial
+      font-size: 12px
+      color: #ffffff
+      margin-top: 6px
+
+

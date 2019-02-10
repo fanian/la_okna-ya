@@ -1,0 +1,837 @@
+// Normally mainpage styles 
+//+font('Conv_SegoePrintRegular', 'SegoePrintRegular')
+
+.top
+  background-color: rgba(221, 255, 247, 0.56)
+  +cover
+
+.navbar-top
+  text-align: left
+  color: #575142
+  margin-bottom: 10px
+  .right-b
+    font-family: 'robotoregular'
+    font-size: 25px
+    display: inline-block
+    line-height: 1em
+    padding: 10px 25px 10px 0
+    vertical-align: text-bottom
+    border-right: solid 1px rgb(211,190,141)
+    margin-left: 50px
+    i
+      display: inline-block
+      vertical-align: middle
+      +s(phone-ico)
+      position: relative
+      content: ''
+      top: 0
+      left: 0
+      margin-right: 10px
+  .right-b-after
+    display: inline-block
+    margin-left: 3%
+    vertical-align: text-bottom
+    h3
+      font-size: 16px
+      margin: 0
+      +rr
+    .callme
+      font-size: 14px
+      text-decoration: underline
+      color: #575142
+      +rl
+      &:hover, &:focus, &:active
+        text-decoration: none
+        color: #575142
+  .nomenclature
+    display: inline-block
+    background: #ffffff
+    +border-radius(0 0 8px 8px)
+    padding: 15px 30px
+    +rr
+    font-size: 12px
+    color: #838383
+    text-align: center
+    span
+      +rm
+      font-size: 22px
+      color: #575142
+
+.navbar
+  margin-bottom: 0
+
+.navbar-brand
+  text-transform: uppercase
+  color: #575142 !important
+.navbar-default
+  border: none
+  background: none
+  padding: 0
+  text-align: center
+  .icon-bar
+    background-color: #575142 !important
+
+  .navbar-nav
+    margin: 0 0 0 -30px
+    li
+      margin-right: 5px
+      &:last-of-type
+        margin-right: 0
+      a
+        color: #575142 // text color
+        +rb
+        font-size: 14px
+        position: relative
+        text-transform: uppercase
+        text-decoration: none
+        margin: 8px 16px
+        padding: 0
+        +transition(background,.1s)
+        &:hover, &.active, &:focus
+          +border-radius(18px)
+          +background-clip(padding-box)
+          background: #fff
+          +box-shadow(0 -1px 0 rgba(255,255,255,.36), inset 0 1px 0 rgba(0,0,0,.29))
+          padding: 8px 16px
+          margin: 0
+          color: #575142
+
+header
+  +cover
+  position: relative
+  overflow: hidden
+  color: #ffffff
+  padding-bottom: 70px
+  .header__top
+    h1
+      font-family: 'roboto_slablight'
+      font-size: 37px
+      color: #2a2a2a
+      font-weight: normal
+      padding-top: 40px
+      span
+        font-family: 'roboto_slabregular'
+        font-size: 72px
+  .header__price
+    background: url(../img/price_bg.png) no-repeat
+    text-align: center
+    font-family: 'roboto_slablight'
+    font-size: 24px
+    padding-top: 50px
+    +text-shadow(1px 2px 0 rgba(0,0,0,.15))
+    width: 210px
+    height: 210px
+    margin-top: -10px
+    span
+      font-family: 'roboto_slabbold'
+      font-size: 58px
+      line-height: 1em
+      span
+        font-size: 38px
+
+  .header__text
+    position: relative
+    p
+      +rl
+      font-size: 18px
+      margin-top: 20px
+      color: #fff
+      font-weight: bold
+      +text-shadow(1px 2px 0 rgba(0,0,0,.75))
+
+      &:first-child
+        margin-top: 5px
+
+  .header__button
+    margin-top: 15px
+
+
+.form
+  background: url(../img/form_bg.png) no-repeat center center
+  width: 100%
+  min-height: 256px
+  position: relative
+  left: 0
+  margin-top: 0
+  padding-bottom: 60px
+  +cover
+
+  .form__block
+    float: right
+    padding-right: 0
+    padding-top: 67px
+    .block__top
+      padding-right: 40px
+      text-align: right
+      position: relative
+      h2
+        color: #ffffff
+        +rl
+        display: inline-block
+        margin-right: 0
+        margin-top: 0
+        +rl
+        text-transform: none
+        font-size: 37px
+        line-height: 1.2em
+        span
+          font-size: 57px
+          +rb
+      &:after
+        position: absolute
+        right: -15px
+        top: 0
+        height: 100%
+        width: 0
+        border-right: 1px solid rgba(#fff,.1)
+        content: ''
+  .block__form
+    padding-top: 80px
+    padding-left: 40px
+    input
+      width: 100%
+      height: 48px
+      +border-radius(6px)
+      +background-clip(padding-box)
+      background-color: #fff
+      display: block
+      border: none
+      margin-right: 10px
+      padding-left: 15px
+      +box-shadow(inset 0 1px 2px rgba(0,0,0,.09))
+      margin-bottom: 8px
+    .button-wrapper
+      width: 100%
+    .button--form
+      display: block
+      width: 100%
+      height: 63px
+      position: relative
+    .button-shadow
+      margin: 0 auto
+      width: 80%
+      +box-shadow(0 -2px 20px 3px #000)
+
+.tools
+  +clr
+  padding-top: 10px
+  padding-bottom: 40px
+
+  h2
+    font-size: 36px
+    color: #fff
+
+  &__items
+    text-align: center
+  .item
+    background: #ffffff
+    text-align: center
+    display: inline-block
+    +border-radius(4px)
+    vertical-align: top
+    margin-top: 60px
+    +box-shadow(0 1px 3px rgba(0,0,0,.21))
+    padding-bottom: 30px
+    .img
+      height: 242px
+      display: inline-block
+      margin-bottom: 10px
+      img
+        display: block
+        max-width: 100%
+        width: 240px
+    h3
+      font-size: 18px
+      font-family: 'robotoregular'
+      color: #000
+      margin: 5px 0 17px
+      font-weight: 600
+      text-transform: uppercase
+
+    .wave
+      width: 100%
+      height: 0
+      border-bottom: solid 2px rgba(#000, .5)
+    p
+      font-size: 18px
+      color: #181818
+
+
+
+  .text
+    margin: 0 0 20px
+    padding: 0 10px
+    text-align: center
+
+
+  form
+    padding: 0 10px
+
+
+  input
+    width: 100%
+    height: 48px
+    margin-bottom: 14px
+    padding-left: 15px
+    font-size: 15px
+    +border-radius(6px)
+    +background-clip(padding-box)
+    border: none
+    background-color: rgba(0,0,0,.02)
+    +box-shadow(inset 0 1px 2px rgba(0,0,0,.09))
+
+    &:focus
+      @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+
+
+
+
+.video
+  padding: 60px 0
+  &__image
+    text-align: center
+    +clr
+    img
+      max-width: 200px
+  &__button
+    text-align: center
+    p
+      text-align: center
+      margin-top: 10px
+      text-decoration: none
+      color: #000
+
+.form--second
+  @extend .form
+  padding: 0
+  .row
+    padding: 60px 0
+    .block__form
+      padding: 0
+      margin: 0
+      text-align: center
+      color: #fff
+      p
+        margin-top: 10px
+    .form__block
+      padding: 0
+      margin: 0
+      .block__top
+        text-align: left
+        color: #fff
+        padding-right: 0
+        &:after
+          left: -40px
+.intro
+  padding: 30px 0
+  background: url(../img/intro_bg.png) repeat
+
+
+  &-b
+    clear: both
+    +clr
+    position: relative
+  &__img
+    text-align: center
+    margin-left: -55px
+    +clr
+    img
+      max-width: 384px
+  &__text
+    +clr
+    +rl
+    font-size: 14px
+    color: #444
+    margin-top: 40px
+    h2
+      text-align: left
+      margin-bottom: 25px
+    p
+      margin-top: 20px
+
+
+
+
+.features
+  position: relative
+  +cover
+  
+  &:before
+    position: absolute
+    content: ''
+    height: 100%
+    width: 100%
+    display: block
+    background-color: rgba(32,161,110, 0.8)
+  h2
+    margin: 80px 0
+    color: #ffffff
+  &__items
+    //background: url(../img/features-img.jpg) 50% 50% no-repeat
+  &__item
+    +rl
+    display: flex
+    font-size: 16px
+    color: #ffffff
+    margin-bottom: 25px
+  &__image
+    flex: 0
+    margin-right: 15px
+    i.fa
+      font-size: 60px  
+      display: inline-block
+      border-radius: 60px
+      +box-shadow(0 0 4px rgba(255,255,255,0.35))
+      padding: 0.5em 0.6em
+  &__text
+    flex: 1
+    margin: 0
+  &__button
+    margin: 40px 0
+    text-align: center
+    position: relative
+
+
+
+
+.advantages
+  padding: 50px 0
+  background: url(../img/advantages_bg.png)
+  +cover
+  position: relative
+  &__item
+    margin-bottom: 30px
+  &__text
+    margin-top: 20px
+
+  h2
+    font-size: 36px
+    margin-bottom: 40px
+  h3
+    color: #ffffff
+    font-weight: 600
+    +rsb
+    display: inline-block
+    margin-left: -87px
+
+    span
+      background: #223344
+      padding: 0 10px
+  p
+    margin-top: 20px
+  &__button
+    margin: 40px 0 0
+    text-align: center
+  &__item--right
+    .advantages__text
+      text-align: right
+      position: relative
+      z-index: 1
+      h3
+        margin-left: 0
+        margin-right: -87px
+    .advantages__image
+      position: relative
+      z-index: 0
+      img
+        max-width: 100%
+        
+
+.sert
+  +cover
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    height: 100%
+    width: 100%
+    display: block
+    background-color: rgba(255,162,162, 0.8)
+  &__block
+    padding: 40px 0
+  &__text
+    color: #ffffff
+    +rr
+    h2
+      color: #ffffff
+      text-align: left
+      +rsb
+      margin-bottom: 30px
+  &__image
+    text-align: center    
+    img
+      width: 320px
+      height: auto
+      max-width: 100%
+      +box-shadow(0 0 24px #ffffff)
+.director
+  @extend .intro
+  &__img
+    width: 300px
+    height: 300px
+    overflow: hidden
+    border-radius: 50%
+    img
+      max-width: 100%
+.address
+  padding: 30px 0
+  text-align: center
+  background-color: rgb(221, 255, 247)
+  h2
+    text-transform: uppercase
+
+.works
+  background: url(../img/works_bg.png)
+  +cover
+  min-height: 617px
+  margin-top: -10px
+  padding: 50px 0
+  &__block
+    background: url(../img/works-block_bg.png) 50% 50% no-repeat
+    background-size: 450px 509px
+    h2
+      font-family: 'roboto_slablight'
+      font-size: 36px
+      color: #ffffff
+      text-align: right
+      display: inline-block
+      margin-top: 120px
+      span
+        font-family: 'roboto_slabbold'
+        font-size: 46px
+  &__item
+    display: inline-block
+    +rr
+    font-size: 16px
+    color: white
+    line-height: 1.2em
+    p
+      display: inline-block
+      float: left
+      margin-right: 15px
+      margin-top: 8px
+      margin-bottom: 0
+    .outer
+      float: left
+      width: 54px
+      height: 54px
+      border: solid 2px rgba(#ffffff,.5)
+      +border-radius(50%)
+      position: relative
+      display: inline-block
+      text-align: center
+    .inner
+      width: 35px
+      height: 35px
+      line-height: 35px
+      position: relative
+      top: 50%
+      +transform(translateY(-50%))
+      display: inline-block
+      background: #f3d99f
+      +border-radius(50%)
+      +rr
+      font-size: 22px
+      color: #444
+
+    &.left
+      text-align: right
+    &.right
+      text-align: left
+    &.i4
+      margin-top: 120px
+      margin-left: 65px
+    &.i1,&.i2,&.i3
+      p
+        margin-left: 15px
+        margin-right: 0
+    &.i1
+      margin-top: 130px
+      margin-left: 65px
+    &.i2
+      margin-top: 100px
+      margin-left: 95px
+    &.i3
+      margin-top: 100px
+      margin-left: -15px
+
+.review
+  padding: 55px 0
+  h2
+    font-size: 36px
+    line-height: .9em
+    span
+      font-size: 23px
+      font-family: 'roboto_slablight'
+
+  &__item
+    margin-top: 35px
+    position: relative
+    text-align: left
+
+  &__img
+    display: inline-block
+    width: 63px
+    height: 63px
+    margin-right: 15px
+    vertical-align: middle
+    img
+      +border-radius(50%)
+  &__head
+    text-align: left
+    display: inline-block
+    vertical-align: middle
+
+  &__name
+    font-family: 'robotobold'
+    color: #1c1c1c
+    font-size: 16px
+    position: relative
+  &__date
+    font-family: 'robotoregular'
+    color: #bcbcbc
+    font-size: 13px
+    line-height: 1em
+  &__text
+    position: relative
+    font-family: 'robotoregular'
+    font-size: 14px
+    color: #3e3e3e
+    margin-top: 20px
+    border: 1px solid #e8e8e8
+    padding: 15px
+    +border-radius(8px)
+    text-align: left
+    z-index: 1
+    &:before
+      position: absolute
+      content: ''
+      +s(review-popup)
+      top: -10px
+      left: 20px
+  &__button
+    margin: 40px 0 0
+    text-align: center
+
+.order
+  .row
+    padding: 50px 0
+
+  +cover
+  text-align: center
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    height: 100%
+    width: 100%
+    display: block
+    background-color: rgba(0,0,0, 0.4)
+  h2
+    color: #ffffff
+    font-family: 'roboto_slablight'
+    font-size: 37px
+    span
+      font-family: 'roboto_slabbold'
+      font-size: 56px
+      line-height: .7em
+      letter-spacing: -1px
+  &__form
+
+
+    input
+      width: 100%
+      height: 48px
+      +border-radius(6px)
+      +background-clip(padding-box)
+      background-color: #fff
+      display: block
+      border: none
+      margin-right: 10px
+      padding-left: 15px
+      +box-shadow(inset 0 1px 2px rgba(0,0,0,.09))
+      margin-bottom: 8px
+    .button-wrapper
+      width: 100%
+    .button--form
+      display: block
+      width: 100%
+      height: 63px
+      position: relative
+    .button-shadow
+      margin: 0 auto
+      width: 80%
+      +box-shadow(0 -2px 20px 3px #000)
+  &__price
+    //margin-top: 235px
+    color: #ffffff
+    background: url(../img/price_bg.png) no-repeat
+    text-align: center
+    font-family: 'roboto_slablight'
+    font-size: 24px
+    padding-top: 50px
+    +text-shadow(1px 2px 0 rgba(0,0,0,.15))
+    width: 210px
+    height: 210px
+    span
+      font-family: 'roboto_slabbold'
+      font-size: 58px
+      line-height: 1em
+      span
+        font-size: 38px
+
+
+.present
+  padding: 35px 0 55px
+  h2
+    color: #000000
+    font-size: 36px
+  div[class*='col-md-6']
+    margin-top: 65px
+  &__img
+    width: 166px
+    height: 166px
+    line-height: 166px
+    float: left
+    margin-right: 25px
+    img
+      max-width: 100%
+  &__text
+    font-family: 'roboto_slabregular'
+
+    h3
+      color: #000
+      font-size: 18px
+    p
+      font-size: 12px
+      color: #838383
+  &__button
+    margin: 50px 0 0
+    text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+footer
+  background: rgb(48,42,35)
+  +cover
+  padding: 20px 0
+  position: relative
+  .footer__text
+    text-align: center
+    a
+      font-size: 22px
+      display: inline-block
+      +rr
+      color: #f3da9f
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    p
+      font-size: 28px
+      color: #ffffff
+      +rr
+
+
+
+//=============================================
+//popup forms
+//=============================================
+
+.callback
+  background: #ffffff
+  padding: 15px 34px 30px
+  text-align: center
+  +border-radius(6px)
+  max-width: 310px
+  h2
+    font-family: 'roboto_slabbold'
+    font-size: 28px
+    color: #444
+    font-weight: normal
+  form
+    margin-top: 25px
+    input
+      width: 100%
+      height: 48px
+      margin-bottom: 14px
+      padding-left: 15px
+      font-size: 15px
+      +border-radius(6px)
+      +background-clip(padding-box)
+      border: none
+      background-color: rgba(0,0,0,.02)
+      +box-shadow(inset 0 1px 2px rgba(0,0,0,.09))
+
+      &:focus
+        @include box-shadow(0 0 9px rgba(204,62,82,.13))
+    .button--callback
+      margin-top: 0
+      width: 100%
+      height: 63px
+
+
+.thanks
+  text-align: center
+  background: #ffffff
+  font-family: 'forumregular'
+  color: #444444
+  padding: 30px 0 40px
+  max-width: 380px
+  +border-radius(6px)
+  &__img
+    margin-bottom: 15px
+    display: inline-block
+    position: relative
+    width: 351px
+    height: 101px
+
+  h2
+    font-weight: normal
+    font-size: 28px
+    line-height: 1em
+    font-family: 'roboto_slabbold'
+  h4
+    font-weight: normal
+    font-size: 19px
+    padding: 0 30px
+    font-family: 'robotolight'
+
+
+@media (max-width: $screen-md-min)
+
+  h1, .title
+    font-size: 24px !important
+  .features__item
+    padding: 0 !important
+  .advantages__size
+    .size-b
+      background: rgba(#8B7C6C,.6)
+  .order
+    h2
+      background: rgba(#8B7C6C,.6)
+      +border-radius(4px)
+    &__price
+      margin-top: 0
+
+@media (max-width: $screen-sm-min)
+  .advantages__list
+    li
+      padding-right: 30px !important
+      margin-right: 0 !important
+      &:before
+        right: -10px
+
+@media (max-width: $screen-xs-min)
+  .navbar-default
+    .navbar-nav
+      margin: 0
